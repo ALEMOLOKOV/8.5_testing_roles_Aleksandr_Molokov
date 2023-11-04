@@ -1,0 +1,33 @@
+---
+- name: Get url vector
+  ansible.builtin.get_url:
+    url: "https://packages.timber.io/vector/0.27.0/{{ vector_version }}.x86_64.rpm"
+    dest: "./{{ vector_version }}.rpm"
+    mode: 0755
+- name: Creates directory /src/vector/
+  become: true
+  ansible.builtin.file:
+    path: /src/vector/
+    state: directory
+    owner: amolokov
+    group: amolokov
+    mode: 0755
+- name: CP
+  become: true
+  ansible.builtin.copy:
+    src: "./{{ vector_version }}.rpm"
+    dest: /src/vector/{{ vector_version }}.rpm
+    mode: 0755
+    remote_src: yes
+- name: Install vector
+  become: true
+  ansible.builtin.yum:
+    name:
+      - "{{ vector_version }}.rpm"
+- name: Set environment vector
+  become: true
+  ansible.builtin.template:
+    src: template/vector.sh.j2
+    dest: /etc/profile.d/vector.sh
+    mode: 0755
+
