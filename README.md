@@ -56,7 +56,7 @@
 
 6. Добавьте новый тег на коммит с рабочим сценарием в соответствии с семантическим версионированием.
 #### Ответ
-
+!(v1.1.0)[https://github.com/ALEMOLOKOV/8.5_testing_roles_Aleksandr_Molokov/releases/tag/v1.1.0]
 
 ### Tox
 
@@ -100,13 +100,16 @@
 7. Добавьте новый тег на коммит с рабочим сценарием в соответствии с семантическим версионированием.
 
 #### Ответ
-
+!(v1.3.0)[https://github.com/ALEMOLOKOV/8.5_testing_roles_Aleksandr_Molokov/releases/tag/v1.3.0]
 После выполнения у вас должно получится два сценария molecule и один tox.ini файл в репозитории. Не забудьте указать в ответе теги решений Tox и Molecule заданий. В качестве решения пришлите ссылку на  ваш репозиторий и скриншоты этапов выполнения задания. 
 
-#### Попробовал на виртуалке просто установить tox  и прогнать, получилось только проверить на текущей конфигурации python 310  и ansible2.12
+#### Изначально не получалось зайти и проверить tox через предложенный обораз, попробовал на виртуалке просто установить tox  и прогнать, получилось только проверить на текущей конфигурации python 310  и ansible2.12 (поэтому тег раньше чем через предложенный)
 ![mytox](https://github.com/ALEMOLOKOV/8.5_testing_roles_Aleksandr_Molokov/assets/109212419/8809a162-4b35-4c13-8d69-69a83968dc50)
 
 ![tox - reqtxti](https://github.com/ALEMOLOKOV/8.5_testing_roles_Aleksandr_Molokov/assets/109212419/93741e7e-9583-4042-938e-e98efdd5c9ff)
+
+!(v1.2.0)[https://github.com/ALEMOLOKOV/8.5_testing_roles_Aleksandr_Molokov/releases/tag/v1.2.0]
+
 
 
 
